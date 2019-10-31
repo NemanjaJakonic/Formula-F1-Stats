@@ -20,7 +20,7 @@ export class TeamDetails extends Component {
   getTeams = () => {
     const id = this.props.match.params.team;
     var year = this.props.match.params.year;
-    var url = `http://ergast.com/api/f1/${year}/constructors/${id}/constructorStandings.json`;
+    var url = `https://ergast.com/api/f1/${year}/constructors/${id}/constructorStandings.json`;
     $.get(url, data => {
       this.setState({
         team: data,

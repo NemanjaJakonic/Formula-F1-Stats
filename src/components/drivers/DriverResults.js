@@ -19,7 +19,7 @@ export class DriverResults extends Component {
   getResults = () => {
     const id = this.props.driverid;
     const year = this.props.year
-    var url = `http://ergast.com/api/f1/${year}/drivers/${id}/results.json`;
+    var url = `https://ergast.com/api/f1/${year}/drivers/${id}/results.json`;
     $.get(url, data => {
       this.setState({
         results: data,

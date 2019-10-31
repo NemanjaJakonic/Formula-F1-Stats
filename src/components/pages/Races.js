@@ -29,7 +29,7 @@ export class Races extends Component {
     ));
   }
   getRaces = () => {
-    var url = `http://ergast.com/api/f1/${this.state.value}/results/1.json`;
+    var url = `https://ergast.com/api/f1/${this.state.value}/results/1.json`;
     $.get(url, data => {
       //         console.log(data);
       this.setState({

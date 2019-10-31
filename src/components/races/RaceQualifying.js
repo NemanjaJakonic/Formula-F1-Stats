@@ -21,7 +21,7 @@ componentDidMount() {
 getResults = () => {
   const id = this.props.raceid;
   const year = this.props.year
-  var url = `http://ergast.com/api/f1/${year}/circuits/${id}/qualifying.json`;
+  var url = `https://ergast.com/api/f1/${year}/circuits/${id}/qualifying.json`;
   $.get(url, (data) => {
     
       this.setState({

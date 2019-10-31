@@ -23,7 +23,7 @@ export class RaceDetails extends Component {
     const id = this.props.match.params.race;
     var year = this.props.match.params.year;
     console.log(year);
-    var url = `http://ergast.com/api/f1/${year}/circuits/${id}.json`;
+    var url = `https://ergast.com/api/f1/${year}/circuits/${id}.json`;
     $.get(url, data => {
       this.setState({
         race: data,

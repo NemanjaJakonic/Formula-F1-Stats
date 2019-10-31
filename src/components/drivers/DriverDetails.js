@@ -24,7 +24,7 @@ class DriverDetails extends Component {
     const id = this.props.match.params.driver;
     var year = this.props.match.params.year
     console.log(year)
-    var url = `http://ergast.com/api/f1/${year}/drivers/${id}/driverStandings.json`;
+    var url = `https://ergast.com/api/f1/${year}/drivers/${id}/driverStandings.json`;
     $.get(url, data => {
       this.setState({
         driver: data,

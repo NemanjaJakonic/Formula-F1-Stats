@@ -28,7 +28,7 @@ export class Teams extends Component {
     ));
   }
   getTeams = () => {
-    var url = `http://ergast.com/api/f1/${this.state.value}/constructorStandings.json`;
+    var url = `https://ergast.com/api/f1/${this.state.value}/constructorStandings.json`;
     $.get(url, data => {
       this.setState({
         teams: data,

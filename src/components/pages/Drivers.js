@@ -30,7 +30,7 @@ class Drivers extends React.Component {
   }
 
   getDrivers = () => {
-    var url = `http://ergast.com/api/f1/${this.state.value}/driverStandings.json`;
+    var url = `https://ergast.com/api/f1/${this.state.value}/driverStandings.json`;
     $.get(url, data => {
       this.setState({
         drivers: data,

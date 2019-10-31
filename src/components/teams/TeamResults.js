@@ -19,7 +19,7 @@ export class TeamResults extends Component {
   getResults = () => {
     const id = this.props.teamid;
     const year = this.props.year;
-    var url = `http://ergast.com/api/f1/${year}/constructors/${id}/results.json`;
+    var url = `https://ergast.com/api/f1/${year}/constructors/${id}/results.json`;
     $.get(url, data => {
       this.setState({
         results: data,
