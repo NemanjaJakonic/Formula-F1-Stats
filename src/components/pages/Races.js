@@ -12,7 +12,7 @@ export class Races extends Component {
       races: [],
       loading: true,
       search: '',
-      value: new Date().getFullYear()
+      value: 2019
     };
   }
 

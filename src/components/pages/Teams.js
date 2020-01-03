@@ -12,7 +12,7 @@ export class Teams extends Component {
       teams: [],
       loading: true,
       search: "",
-      value: new Date().getFullYear()
+      value: 2019
     };
   }
 

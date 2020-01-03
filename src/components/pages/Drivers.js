@@ -12,7 +12,7 @@ class Drivers extends React.Component {
       drivers: [],
       loading: true,
       search: "",
-      value: new Date().getFullYear()
+      value: 2019
     };
   }
 
